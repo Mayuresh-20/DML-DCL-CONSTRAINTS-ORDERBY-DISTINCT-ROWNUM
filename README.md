@@ -78,7 +78,18 @@ FROM table_name
 
 ![image](https://user-images.githubusercontent.com/91977965/137265486-c0fdc4a7-ea60-4402-bf1c-9b197b5403f0.png)
 
-The SQL DISTINCT keyword is used in conjunction with the SELECT statement to eliminate all the duplicate records and fetching only unique records.
+The following code block has an example, which would sort the result in an ascending order by the NAME and the SALARY −
+
+SQL> 
+SELECT * FROM CUSTOMERS
+
+   ORDER BY NAME, SALARY;
+   
+ ![image](https://user-images.githubusercontent.com/91977965/137267569-53805f83-f398-4dfb-8863-8a7863f1d34a.png)
+
+   
+
+► The SQL DISTINCT keyword is used in conjunction with the SELECT statement to eliminate all the duplicate records and fetching only unique records.
 
 There may be a situation when you have multiple duplicate records in a table. While fetching such records, it makes more sense to fetch only those unique records instead of fetching duplicate records.
 
@@ -86,8 +97,22 @@ Syntax
 The basic syntax of DISTINCT keyword to eliminate the duplicate records is as follows −
 
 SELECT DISTINCT column1, column2,.....columnN 
+
 FROM table_name
+
 WHERE [condition]
+
+
+the following SELECT query returns the duplicate salary records.
+
+SQL> SELECT SALARY FROM CUSTOMERS
+
+   ORDER BY SALARY;
+   
+This would produce the following result, where the salary (2000) is coming twice which is a duplicate record from the original table.
+
+![image](https://user-images.githubusercontent.com/91977965/137267705-ecd2a159-794f-4294-9f49-d98b0d4061d4.png)
+
 
 
 

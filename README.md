@@ -80,7 +80,7 @@ FROM table_name
 
 The following code block has an example, which would sort the result in an ascending order by the NAME and the SALARY −
 
-SQL> 
+• SQL> 
 SELECT * FROM CUSTOMERS
 
    ORDER BY NAME, SALARY;
@@ -93,7 +93,7 @@ SELECT * FROM CUSTOMERS
 
 There may be a situation when you have multiple duplicate records in a table. While fetching such records, it makes more sense to fetch only those unique records instead of fetching duplicate records.
 
-Syntax
+• Syntax
 The basic syntax of DISTINCT keyword to eliminate the duplicate records is as follows −
 
 SELECT DISTINCT column1, column2,.....columnN 
@@ -105,7 +105,7 @@ WHERE [condition]
 
 the following SELECT query returns the duplicate salary records.
 
-SQL> SELECT SALARY FROM CUSTOMERS
+• SQL> SELECT SALARY FROM CUSTOMERS
 
    ORDER BY SALARY;
    
@@ -113,7 +113,24 @@ This would produce the following result, where the salary (2000) is coming twice
 
 ![image](https://user-images.githubusercontent.com/91977965/137267705-ecd2a159-794f-4294-9f49-d98b0d4061d4.png)
 
+► What is the Rownum in SQL?
 
+PLSQL ROWNUM function returns a number that represents the order that a row is selected by Oracle from a table or joined tables. The first row has a ROWNUM of 1, the second has a ROWNUM of 2, and so on.
 
+• Syntax
 
+The syntax for the ROWNUM function in Oracle/PLSQL is:
 
+• ROWNUM
+
+Parameters or Arguments
+
+There are no parameters or arguments for the ROWNUM function.
+
+• Note.
+
+The ROWNUM function is sometimes referred to as a pseudocolumn in Oracle.
+
+• Returns
+
+The ROWNUM function returns a numeric value.

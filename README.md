@@ -121,9 +121,9 @@ PLSQL ROWNUM function returns a number that represents the order that a row is s
 
 The syntax for the ROWNUM function in Oracle/PLSQL is:
 
-• ROWNUM
+ROWNUM
 
-Parameters or Arguments
+• Parameters or Arguments
 
 There are no parameters or arguments for the ROWNUM function.
 
